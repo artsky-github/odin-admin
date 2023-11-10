@@ -1,0 +1,36 @@
+#sidebar {
+  grid-row: 1 / 3;
+  background: var(--green-gradient);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+}
+
+#sb-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#sb-options,
+#sb-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#sidebar > div > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.1s ease-out;
+  transform-origin: center left;
+}
+
+#sidebar > div > a:hover {
+  transform: scale(1.1);
+}
