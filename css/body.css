@@ -1,0 +1,4 @@
+#body {
+  background: var(--brown-gradient);
+  z-index: 0;
+}

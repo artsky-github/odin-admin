@@ -6,6 +6,7 @@
   flex-direction: column;
   gap: 50px;
   padding: 20px;
+  z-index: 2;
 }
 
 #sb-head {
@@ -27,10 +28,5 @@
   gap: 10px;
   text-decoration: none;
   color: white;
-  transition: all 0.1s ease-out;
   transform-origin: center left;
-}
-
-#sidebar > div > a:hover {
-  transform: scale(1.1);
 }

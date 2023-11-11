@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "sidebar.css";
 @import "nav.css";
+@import "body.css";
 @import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
 
 :root {
@@ -12,6 +13,20 @@
     rgb(37, 77, 54) 0%,
     rgb(73, 148, 105) 100%
   );
+  --brown-gradient: linear-gradient(
+    180deg,
+    rgb(195, 163, 131) 0%,
+    rgb(78, 65, 52) 100%
+  );
+  --gray-gradient: linear-gradient(270deg, lightgray, gray);
+}
+
+.hoverable-item {
+  transition: all 0.1s ease-out;
+}
+
+.hoverable-item:hover {
+  transform: scale(1.1);
 }
 
 html,
@@ -31,4 +46,13 @@ h1 {
   font-family: var(--logo-font, --system-font);
   font-size: 16pt;
   text-wrap: nowrap;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
