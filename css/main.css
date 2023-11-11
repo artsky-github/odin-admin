@@ -29,23 +29,31 @@
   transform: scale(1.1);
 }
 
+.avatar-small {
+  width: 60px;
+}
+
+.avatar-main {
+  width: 80px;
+}
+
 html,
 body {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   font-family: var(--system-font);
 }
 
 body {
   display: grid;
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: min-content 1fr;
   grid-template-columns: min-content 1fr;
 }
 
 h1 {
   font-family: var(--logo-font, --system-font);
   font-size: 16pt;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 button {
