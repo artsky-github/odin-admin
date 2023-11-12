@@ -32,16 +32,21 @@
   gap: 15px;
 }
 
-#announcements > div > div > h5 {
-  margin-bottom: 10px;
-}
-
 #announcements > div > div:not(:last-child) {
   border-bottom: 1px solid gray;
   padding-bottom: 15px;
 }
 
-#trending {
+#trending > div {
+  padding: 20px;
+  display: grid;
+  grid-template: repeat(4, 1fr) / min-content 1fr;
+  align-items: center;
+  column-gap: 10px;
+}
+
+#trending > div > img {
+  justify-self: right;
 }
 
 h4 {
@@ -54,4 +59,5 @@ h4 {
 h5 {
   font-weight: bold;
   font-size: 14pt;
+  margin-bottom: 10px;
 }
