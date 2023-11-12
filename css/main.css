@@ -9,7 +9,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --logo-font: "Skranji", serif;
   --green-gradient: linear-gradient(
-    270deg,
+    360deg,
     rgb(37, 77, 54) 0%,
     rgb(73, 148, 105) 100%
   );
@@ -18,7 +18,7 @@
     rgb(195, 163, 131) 0%,
     rgb(78, 65, 52) 100%
   );
-  --gray-gradient: linear-gradient(270deg, lightgray, gray);
+  --gray-gradient: linear-gradient(360deg, lightgray, gray);
 }
 
 .hoverable-item {

@@ -1,4 +1,57 @@
 #body {
-  background: var(--brown-gradient);
+  background-image: url("/images/tree-background.png");
+  background-size: cover;
   z-index: 0;
+  display: grid;
+  grid-template: repeat(2, 1fr) / 2fr 1fr;
+  padding: 20px;
+  gap: 20px;
+}
+
+#body > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#body > div > div {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  height: calc(100% - 14pt);
+  box-shadow: 0 3px 10px;
+}
+
+#projects {
+  grid-row: 1 / 3;
+}
+
+#announcements > div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#announcements > div > div > h5 {
+  margin-bottom: 10px;
+}
+
+#announcements > div > div:not(:last-child) {
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+}
+
+#trending {
+}
+
+h4 {
+  font-size: 16pt;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 3px black;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 14pt;
 }
